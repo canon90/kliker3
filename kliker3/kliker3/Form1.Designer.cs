@@ -28,12 +28,58 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Text = "Form1";
+            go = new Button();
+            label1 = new Label();
+            stop = new Button();
+            SuspendLayout();
+            // 
+            // go
+            // 
+            go.Location = new Point(566, 353);
+            go.Name = "go";
+            go.Size = new Size(126, 46);
+            go.TabIndex = 0;
+            go.Text = "go";
+            go.UseVisualStyleBackColor = true;
+            go.Click += go_Click;
+            // 
+            // label1
+            // 
+            label1.AutoSize = true;
+            label1.Location = new Point(411, 70);
+            label1.Name = "label1";
+            label1.Size = new Size(38, 15);
+            label1.TabIndex = 1;
+            label1.Text = "label1";
+            // 
+            // stop
+            // 
+            stop.Location = new Point(392, 353);
+            stop.Name = "stop";
+            stop.Size = new Size(121, 46);
+            stop.TabIndex = 2;
+            stop.Text = "stop";
+            stop.UseVisualStyleBackColor = true;
+            stop.Click += stop_Click;
+            // 
+            // Form1
+            // 
+            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleMode = AutoScaleMode.Font;
+            ClientSize = new Size(800, 450);
+            Controls.Add(stop);
+            Controls.Add(label1);
+            Controls.Add(go);
+            Name = "Form1";
+            Text = "Form1";
+            ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion
+
+        private Button go;
+        private Label label1;
+        private Button stop;
     }
 }
