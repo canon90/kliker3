@@ -1,4 +1,6 @@
-﻿namespace kliker3
+﻿
+
+namespace kliker3
 {
     partial class Form1
     {
